@@ -11,15 +11,14 @@
 // Write your solution below.
 // ====================================================================
 
-
-
-
-
-
-
-
-
-
+var userInput1 = prompt("Enter first number");
+var userNum1 = parseInt(userInput1);
+var userInput2 = prompt("Enter second number");
+var userNum2 = parseInt(userInput2);
+var numDiff = function(userNum1, userNum2) {
+	 return Math.abs(userNum1 - userNum2); 
+}
+console.log("Difference: "+numDiff(userNum1, userNum2));
 
 
 
@@ -38,19 +37,27 @@
 // ====================================================================
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+var userInput3 = prompt("Enter a number: ");
+var userNum3 = userInput3.split("");//splitting a string into an array of substring
+	//console.log(userNum3);//log array userNum3 = ["", ""];
+	if (userNum3[userNum3.length-1] == "1") { //if the last number/string is 1
+		console.log(userInput3 + "st");
+	}
+	else if (userNum3[userNum3.length-1] == "2"){ //if the last number/string is 2
+		console.log(userInput3 + "nd");
+	}
+	else if (userNum3[userNum3.length-1] == "3") { //if the last number/string is 3
+		console.log(userInput3 + "rd");
+	}
+	else if (userNum3[userNum3.length-1] > "3") { //if the last number/string is 4
+		console.log(userInput3 + "th");
+	}
+	else if (userNum3[userNum3.length-1] == "0"){
+		console.log(userInput3 + "th"); //if the last number/string is 0
+	}
+	else {
+		console.log("Please enter a vaild number");
+	}
 
 
 // ========================== Exercise 3 =================================
@@ -60,11 +67,13 @@
 // =======================================================================
 // Write your solution below.
 // =======================================================================
+/*
+for (var random_integer = 1; random_integer < 11; random_integer++){
+var random_integer = Math.floor(Math.random());
+console.log(random_integer);
+}
 
-
-
-
-
+*/
 
 
 
